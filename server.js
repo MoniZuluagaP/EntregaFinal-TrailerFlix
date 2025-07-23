@@ -12,7 +12,7 @@ const Actor_Filmacion = require('./models/Actor_Filmacion');
 const Tag_Filmacion = require('./models/Tag_Filmacion');
 
 const app = express();
-const PORT = process.env.PORT ;
+const PORT = process.env.PORT||3000 ;
 
 // Para probar la conexión
 // authenticate()
@@ -566,6 +566,6 @@ app.use((req, res) => {
     res.status(404).json({ error: "Ruta no encontrada. Verifica la URL." });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Servidor corriendo en puerto ${PORT}`);
 });
