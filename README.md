@@ -76,7 +76,9 @@ EntregaFinal-TrailerFlix/
 - `Actor_Filmacion`
 
 ### Diagrama de Entidad Relación (DER)
+
 ![DER](https://github.com/silUrzagasti/EntregaFinal-TrailerFlix/blob/main/trailerflix.png?raw=true)
+
 
 ### Consultas en MySQL
 1. Muestra las paliculas ordenadas por nombre del genero
@@ -115,7 +117,8 @@ ORDER BY A.nombreActor, F.titulo;
 ```
 1. Muestra el título y el género en mayúsculas, las etiquetas separadas por coma, duración y enlace al tráiler de las "Peliculas"
 ```sql
-SELECT UCASE(F.titulo) AS Titulo, UCASE(G.nombreGenero) AS Genero, GROUP_CONCAT(T.nombreTag SEPARATOR ', ') AS Etiquetas, F.duracion AS Duracion, F.trailer AS Link_Trailer
+
+SELECT UPPER(F.titulo) AS Titulo, UPPER(G.nombreGenero) AS Genero, GROUP_CONCAT(T.nombreTag SEPARATOR ', ') AS Etiquetas, F.duracion AS Duracion, F.trailer AS Link_Trailer
 FROM filmaciones F
 JOIN categorias C ON F.idCategoria = C.idCategoria
 JOIN generos G ON F.idGenero = G.idGenero
@@ -126,7 +129,8 @@ GROUP BY F.titulo, G.nombreGenero, F.duracion, F.trailer;
 ```
 8. Muestra el título y el género en mayúsculas, las etiquetas separadas por coma, cantidad de temporadas, enlace al tráiler y resumen de las "Series"
 ```sql
-SELECT UCASE(F.titulo) AS Titulo, UCASE(G.nombreGenero) AS Genero, GROUP_CONCAT(T.nombreTag SEPARATOR ', ') AS Etiquetas, F.temporadas AS Temporadas, F.trailer AS Link_Trailer, f.resumen AS Resumen
+
+SELECT UPPER(F.titulo) AS Titulo, UPPER(G.nombreGenero) AS Genero, GROUP_CONCAT(T.nombreTag SEPARATOR ', ') AS Etiquetas, F.temporadas AS Temporadas, F.trailer AS Link_Trailer, f.resumen AS Resumen
 FROM filmaciones F
 JOIN categorias C ON F.idCategoria = C.idCategoria
 JOIN generos G ON F.idGenero = G.idGenero
