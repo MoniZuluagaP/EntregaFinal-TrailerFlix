@@ -1,6 +1,6 @@
 # 🎬 Entrega Final  TrailerFlix
 
-Este Proyecto backend con Node.js, ExpressJS, Sequelize y MySQL es para la gestión de películas y series.
+Este Proyecto desarrollado dentro del curso de Backend de Ingenias+ con Node.js, ExpressJS, Sequelize y MySQL es para la gestión de películas y series.
 
 ## 📁 Estructura del Proyecto
 ```
@@ -21,8 +21,8 @@ EntregaFinal-TrailerFlix/
 ├── README.md
 |── sequelize.js
 ├── server.js
-└── trailerflix.json
-
+├── trailerflix.json
+└── trailerflix.sql
 ```
 ## 🚀 Instalación
 
@@ -36,7 +36,12 @@ EntregaFinal-TrailerFlix/
    npm install
    ```
 
-### 3. Configurar variables de entorno (`.env`):
+### 3. Importar la BD en MySQL
+    ```bash
+    mysql -u root -p trailerflix < trailerflix.sql
+    ```
+
+### 4. Configurar variables de entorno (`.env`):
    ```env
    PORT=3000
    DB_database=trailerflix
@@ -45,6 +50,7 @@ EntregaFinal-TrailerFlix/
    DB_host=localhost
    DB_dialect=mysql
    ```
+
 ## 🌐 Endpoints principales
 
 | Método | Ruta              | Descripción                          |
