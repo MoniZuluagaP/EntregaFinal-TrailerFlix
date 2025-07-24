@@ -58,10 +58,10 @@ EntregaFinal-TrailerFlix/
 | GET    | /filmaciones      | Lista todas las filmaciones         |
 | GET    | /filmaciones/genero/:nombreGenero  | Trae las peliculas o series por un genero especifico (buscado por  params)    |
 | GET  | /filmaciones/mision       | Busca todas las filmaciones que tengan la palabra "misión" en el resumen y mostrar su categoria y titulo
-| GET | /filmacion/3temp    | Muestra las series con 3 o mas temporadas|
+| GET | /filmaciones/3temp    | Muestra las series con 3 o mas temporadas|
 | GET | /actores/chris-pratt    | Cuenta en cuántas películas/series trabajó el actor Chris Pratt.
 | GET | /actores/trabajos   | Muestra el nombre completo de actrices/actores junto al título de los trabajos, categoría y género|
-| GET | /filmacion/peliculas    | Muestra título y género en mayúsculas, tags separados por coma, duración y enlace al tráiler|
+| GET | /filmaciones/peliculas    | Muestra título y género en mayúsculas, tags separados por coma, duración y enlace al tráiler|
 | GET | /filmaciones/series    | Muestra título y género en mayúsculas, tags separados por coma, cantidad de temporadas, tráiler y resumen|
 | GET | /filmaciones/conteo-peliculas    |Cuenta la cantidad total de películas registradas|
 | GET | /filmaciones/conteo-series    |Cuenta la cantidad total de series registradas|
