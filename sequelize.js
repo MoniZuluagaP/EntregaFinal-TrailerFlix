@@ -4,7 +4,7 @@ const Sequelize = require('sequelize');
 const sequelize = new Sequelize( process.env.DB_database, process.env.DB_username, process.env.DB_password, {
     host: process.env.DB_host,
     dialect: process.env.DB_dialect,
-    port: process.env.DB_PORT,
+    port: Number(process.env.DB_PORT),
     define: {timestamps: false}
 });
 
