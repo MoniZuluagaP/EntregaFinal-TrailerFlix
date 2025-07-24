@@ -79,7 +79,6 @@ EntregaFinal-TrailerFlix/
 
 ![DER](https://github.com/silUrzagasti/EntregaFinal-TrailerFlix/blob/main/trailerflix.png?raw=true)
 
-
 ### Consultas en MySQL
 1. Muestra las paliculas ordenadas por nombre del genero
 ```sql
