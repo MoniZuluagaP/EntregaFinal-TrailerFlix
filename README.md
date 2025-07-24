@@ -2,6 +2,8 @@
 
 Este Proyecto desarrollado dentro del curso de Backend de Ingenias+ con Node.js, ExpressJS, Sequelize y MySQL es para la gestión de películas y series.
 
+https://entregafinal-trailerflix-production-31e0.up.railway.app/
+
 ## 📁 Estructura del Proyecto
 ```
 EntregaFinal-TrailerFlix/
