@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
             body {
               margin: 0;
               font-family: 'Segoe UI', sans-serif;
-              background:#555;
+              background:#111;
               color: #f5f5f5;
               text-align: center;
             }
@@ -82,7 +82,7 @@ app.get('/', (req, res) => {
           </header>
 
           <main>
-          <div class="subtitle">Proyecto realizado para <strong>Ingenias - YPF</strong></div>
+          <div class="subtitle">Proyecto realizado para curso BACKEND- NODEJS <br><strong>Ingenias - YPF</strong></div>
             <a class="catalogo-btn" href="/filmaciones">Ver catálogo completo</a>
 
             <div class="credits">
@@ -155,9 +155,9 @@ app.get('/filmaciones/genero/:nombreGenero', async (req, res) => {
         console.error('Error al buscar filmaciones por género:', error);
         res.status(500).json({ error: 'Error del servidor.' });
          }
-    // finally {
-    //     await closeConnection(); // Cierra conexión 
-    // }
+    //  finally {
+    //      await closeConnection(); // Cierra conexión 
+    //  }
 });
 
 //2. Endpoint para Obtener películas con los tags "Aventura" y "Ciencia Ficción", o "Aventura" y "Fantasía".
