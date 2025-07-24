@@ -11,7 +11,7 @@ const Actor_Filmacion = sequelize.define('Actor_Filmacion', {
     allowNull: false
   }
 }, {
-  tableName: 'Actor_Filmacion',
+  tableName: 'actor_filmacion',
   timestamps: false
 });
 

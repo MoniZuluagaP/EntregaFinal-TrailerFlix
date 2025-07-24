@@ -13,7 +13,7 @@ const Categoria = sequelize.define('Categoria', {
     allowNull: false
   }
 }, {
-  tableName: 'Categorias',
+  tableName: 'categorias',
   timestamps: false
 });
 

@@ -41,7 +41,7 @@ trailer: {
     allowNull: true
 }
 }, {
-tableName: 'Filmaciones',
+tableName: 'filmaciones',
 timestamps: false
 });
 
